@@ -1,14 +1,17 @@
 module.exports =
 {
   purge: [],
-  darkMode: false,
+  darkMode: "class",
   theme:
   {
     extend: {},
   },
   variants:
   {
-    extend: {},
+    extend:
+    {
+      cursor : ["hover"]
+    },
   },
   plugins: [],
 }

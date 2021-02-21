@@ -1,0 +1,41 @@
+<div class="w-screen h-screen bg-gray-100 dark:bg-gray-800 text-purple-900 dark:text-purple-200 p-10 flex justify-center items-center">
+    <div class="h-full w-full border-8 border-purple-900 dark:border-purple-200 flex flex-col justify-between">
+        <div class="flex items-center justify-end">
+            <div (click)="toggleThemeChosen()" class="flex px-4 py-2 w-12 h-12 rounded-bl-full bg-gray-800 dark:bg-gray-100 cursor-pointer">
+                <svg-moon *ngIf="themeChosen == 'Light'" [class]="'fill-current text-gray-100 dark:text-gray-800'"></svg-moon>
+                <svg-sun *ngIf="themeChosen == 'Dark'" [class]="'fill-current text-gray-100 dark:text-gray-800'"></svg-sun>
+            </div>
+        </div>
+
+        <div class="flex flex-col px-4">
+            <div class="text-4xl font-bold tracking-wide">
+                <div>Hi,</div>
+                <div>I am Fazil Ahamed K!</div>
+            </div>
+
+            <div class="text-2xl mt-2">I am a Full Stack Developer and a Technical Trainer</div>
+        </div>
+
+        <div class="flex justify-between">
+            <div></div>
+
+            <div class="font-mono text-lg tracking-wide self-end">And You, don't forget to smile!</div>
+
+            <div class="flex flex-col justify-end">
+                <div routerLink="portfolio" class="flex items-center justify-end p-2 menu">
+                    <div class="mr-1 text-md font-bold tracking-widest">Portfolio</div>
+                    <div>
+                        <svg-laptop [class]="'fill-current'"></svg-laptop>
+                    </div>
+                </div>
+
+                <div routerLink="skills" class="flex items-center justify-end p-2 menu">
+                    <div class="mr-1 text-md font-bold tracking-widest">Skills</div>
+                    <div>
+                        <svg-learning [class]="'fill-current'"></svg-learning>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
