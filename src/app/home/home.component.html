@@ -1,9 +1,9 @@
-<div class="w-screen h-screen bg-gray-100 dark:bg-gray-800 text-purple-900 dark:text-purple-200 p-10 flex justify-center items-center">
+<div class="w-screen h-screen p-10 flex justify-center items-center">
     <div class="h-full w-full border-8 border-purple-900 dark:border-purple-200 flex flex-col justify-between">
         <div class="flex items-center justify-end">
-            <div (click)="toggleThemeChosen()" class="flex px-4 py-2 w-12 h-12 rounded-bl-full bg-gray-800 dark:bg-gray-100 cursor-pointer">
-                <svg-moon *ngIf="themeChosen == 'Light'" [class]="'fill-current text-gray-100 dark:text-gray-800'"></svg-moon>
-                <svg-sun *ngIf="themeChosen == 'Dark'" [class]="'fill-current text-gray-100 dark:text-gray-800'"></svg-sun>
+            <div (click)="themeService.toggleThemeChosen()" class="flex px-4 py-2 w-12 h-12 rounded-bl-full bg-gray-800 dark:bg-gray-100 cursor-pointer">
+                <svg-moon *ngIf="themeService.themeChosen == 'Light'" [class]="'fill-current text-gray-100 dark:text-gray-800'"></svg-moon>
+                <svg-sun *ngIf="themeService.themeChosen == 'Dark'" [class]="'fill-current text-gray-100 dark:text-gray-800'"></svg-sun>
             </div>
         </div>
 

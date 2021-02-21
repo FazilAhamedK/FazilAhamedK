@@ -10,6 +10,8 @@ module.exports =
   {
     extend:
     {
+      borderWidth : ["dark"],
+      boxShadow : ["dark"],
       cursor : ["hover"]
     },
   },

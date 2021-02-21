@@ -10,6 +10,7 @@ import { LaptopComponent } from './svgs/laptop/laptop.component';
 import { LearningComponent } from './svgs/learning/learning.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ThemeService } from './theme.service';
 
 @NgModule
 ({
@@ -29,7 +30,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ThemeService],
   bootstrap: [AppComponent]
 })
 export class AppModule
