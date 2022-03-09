@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { ThemeService } from '../theme.service';
+import { Component } from '@angular/core';
 
 @Component
 ({
@@ -8,7 +7,4 @@ import { ThemeService } from '../theme.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent
-{
-  constructor(public themeService : ThemeService)
-  { }
-}
+{ }

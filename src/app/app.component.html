@@ -1,18 +1,17 @@
-<div *ngIf="!isHomePageActive()" class="flex justify-between px-5 py-2 bg-purple-900 dark:bg-transparent text-gray-100 dark:border-b dark:border-gray-100">
+<nav class="flex justify-between px-5 py-2 bg-midnightNavy text-delicateWhite dark:border-b dark:border-delicateWhite">
     <div routerLink="" class="font-bold text-lg tracking-wide cursor-pointer">FazilAhamedK</div>
     
-    <div class="flex items-center">
-        <div class="flex">
-            <div routerLink="portfolio" class="cursor-pointer" [ngClass]="{'font-bold tracking-wide' : getCurrentPage() === 'portfolio'}">Portfolio</div>
-            <div class="mx-2 text-gray-400">/</div>
-            <div routerLink="skills" class="cursor-pointer" [ngClass]="{'font-bold tracking-wide' : getCurrentPage() === 'skills'}">Skills</div>
+    <div class="hidden items-center space-x-8">
+        <div class="flex divide-x divide-morningDewHaze navItems">
+            <div routerLink="portfolio" class="cursor-pointer">Portfolio</div>
+            <div routerLink="skills" class="cursor-pointer">Skills</div>
         </div>
 
-        <div (click)="themeService.toggleThemeChosen()" class="ml-4">
-            <svg-moon *ngIf="themeService.themeChosen == 'Light'" [class]="'fill-current text-gray-100'"></svg-moon>
-            <svg-sun *ngIf="themeService.themeChosen == 'Dark'" [class]="'fill-current text-gray-100'"></svg-sun>
+        <div class="emojis flex space-x-2">
+            <img src="https://twemoji.maxcdn.com/v/latest/72x72/1f600.png" class="h-4" alt="A smile emoji">
+            <img src="https://twemoji.maxcdn.com/v/latest/72x72/1f49c.png" class="h-4" alt="A purple heart emoji">
         </div>
     </div>
-</div>
+</nav>
 
 <router-outlet></router-outlet>
