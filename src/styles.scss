@@ -4,7 +4,34 @@
 
 body
 {
-    @apply bg-delicateWhite text-midnightNavy;
+    @apply bg-delicateWhite text-midnightNavy overflow-hidden;
+}
+
+div.background
+{
+    @apply absolute h-screen -z-10 opacity-50;
+
+    div
+    {
+        background-image: url("assets/BackGround.png");
+        width: 20373px;
+        animation: slide 500s linear infinite;
+
+        @apply h-full bg-repeat-x bg-center bg-contain;
+    }
+}
+
+@keyframes slide
+{
+    0%
+    {
+      transform: translate3d(0, 0, 0);
+    }
+    
+    100%
+    {
+      transform: translate3d(-6791px, 0, 0);
+    }
 }
 
 ::-webkit-scrollbar
