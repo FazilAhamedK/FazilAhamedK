@@ -15,9 +15,13 @@ div.background
     {
         background-image: url("assets/BackGround.png");
         width: 20373px;
-        animation: slide 500s linear infinite;
-
+        
         @apply h-full bg-repeat-x bg-center bg-contain;
+
+        @media (min-width: 768px)
+        {
+            animation: slide 500s linear infinite;
+        }
     }
 }
 
