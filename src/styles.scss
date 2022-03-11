@@ -1,32 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base
+{
+  html
+  {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+}
+
 body
 {
-    @apply bg-delicateWhite text-midnightNavy overflow-hidden;
-}
-
-div.background
-{
-    @apply absolute h-screen -z-10 opacity-50;
-    
-    div
-    {
-        @apply h-full w-[20373px] bg-[url("assets/BackGround.png")] bg-repeat-x bg-center bg-contain;
-        animation: slide 500s linear infinite;
-    }
-}
-
-@keyframes slide
-{
-    0%
-    {
-      transform: translate3d(0, 0, 0);
-    }
-    
-    100%
-    {
-      transform: translate3d(-6791px, 0, 0);
-    }
+  @apply bg-delicateWhite text-midnightNavy;
 }
