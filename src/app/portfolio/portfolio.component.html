@@ -1,21 +1,21 @@
-<div class="flex items-end mt-2 border-midnightNavy">
-    <img src="/assets/Bitmoji_Tea.png" class="-scale-x-100 h-28 border-b border-morningDewHaze" alt="">
-    <div class="text-midnightNavy text-2xl tracking-wider border-b border-morningDewHaze">Look what I have turned my tea into!</div>
+<div class="flex items-end mt-2 border-darkPurple">
+    <img src="/assets/Bitmoji_Tea.png" class="h-28 border-b border-momoPeach" alt="">
+    <div class="text-darkPurple text-2xl tracking-wider border-b border-momoPeach">Look what I have turned my tea into!</div>
 </div>
 
 <div class="mx-5 mt-4"> 
     <div class="flex flex-wrap justify-around">
-        <div *ngFor="let project of portfolio" class="flex flex-col border border-midnightNavy shadow-lg rounded-md max-w-sm my-4">
+        <div *ngFor="let project of portfolio" class="flex flex-col border border-darkPurple shadow-lg rounded-md max-w-sm my-4">
             <div class="flex items-center justify-between">
-                <div class="p-2 uppercase tracking-wider text-aquaLake text-lg font-bold text-left">{{project.title}}</div>
+                <div class="p-2 uppercase tracking-wider text-darkRaspberry text-lg font-bold text-left">{{project.title}}</div>
                 <div class="mr-2 cursor-pointer">
                     <img *ngIf="project.isIndividualContributor" src="assets\Individual.png" title="Individual Contributor" class="h-6" alt="">
                     <img *ngIf="! project.isIndividualContributor" src="assets\Team.png" title="Team Player" class="h-6" alt="">
                 </div>
             </div>
-            <div class="p-2 flex-auto border-t border-morningDewHaze">{{project.description}}</div>
-            <div class="p-2 flex flex-wrap justify-center border-t border-morningDewHaze">
-                <div *ngFor="let technology of project.technologies" class="bg-aquaLake text-sm text-delicateWhite rounded-full px-2 py-1 m-1">{{technology}}</div>
+            <div class="p-2 flex-auto border-t border-momoPeach">{{project.description}}</div>
+            <div class="p-2 flex flex-wrap justify-center border-t border-momoPeach">
+                <div *ngFor="let technology of project.technologies" class="bg-darkRaspberry text-sm text-glamourWhite rounded-full px-2 py-1 m-1">{{technology}}</div>
             </div>
         </div>
     </div>

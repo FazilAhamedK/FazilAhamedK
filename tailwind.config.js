@@ -9,10 +9,10 @@ module.exports =
   {
     colors:
     {
-      midnightNavy: "#2F404F",
-      aquaLake: "#3894A1",
-      delicateWhite: "#F0F1EE",
-      morningDewHaze: "#C7DAD3"
+      darkPurple: "#35063E",
+      darkRaspberry: "#872657",
+      glamourWhite: "#F0F1EE",
+      momoPeach: "#F47983"
     },
     extend: {},
   },
