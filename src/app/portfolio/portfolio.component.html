@@ -1,13 +1,28 @@
-<div class="flex items-end mt-2 border-darkPurple">
-    <img src="/assets/Bitmoji_Tea.png" class="h-28 border-b border-momoPeach" alt="">
-    <div class="pl-1 text-darkPurple text-2xl tracking-wider border-b border-momoPeach">Look what I have turned my tea into!</div>
+<div class="flex flex-col lg:flex-row justify-end lg:justify-between lg:items-end space-y-4 lg:space-y-0 mt-2 mr-4">
+    <div class="flex items-end">
+        <img src="/assets/Bitmoji_Tea.png" class="h-28 border-b border-momoPeach" alt="">
+        <div class="pl-1 text-darkPurple text-2xl tracking-wider border-b border-momoPeach">Look what I have turned my tea into!</div>
+    </div>
+
+    <div class="flex self-end items-end divide-x divide-momoPeach">
+        <div class="flex items-center space-x-2 mr-2">
+            <img src="assets\Individual.png" class="h-4" alt="">
+            <div class="text-sm">Individual Contributor</div>
+        </div>
+
+        <div class="flex items-center space-x-1.5 pl-2">
+            <img src="assets\Team.png" class="h-4" alt="">
+            <div class="text-sm">Team Player</div>
+        </div>
+    </div>
 </div>
 
-<div class="mx-5 mt-4"> 
+<div class="mx-5"> 
     <div class="flex flex-wrap justify-around">
         <div *ngFor="let project of portfolio" class="flex flex-col border border-darkPurple shadow-lg rounded-md max-w-sm my-4">
             <div class="flex items-center justify-between">
                 <div class="p-2 uppercase tracking-wider text-darkRaspberry text-lg font-bold text-left">{{project.title}}</div>
+
                 <div class="mr-2 cursor-pointer">
                     <img *ngIf="project.isIndividualContributor" src="assets\Individual.png" title="Individual Contributor" class="h-6" alt="">
                     <img *ngIf="! project.isIndividualContributor" src="assets\Team.png" title="Team Player" class="h-6" alt="">
